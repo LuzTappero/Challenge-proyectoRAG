@@ -1,14 +1,12 @@
-DOCUMENTACIÓN DEL PROYECTO
 
-1. INTRODUCCIÓN
+# PROYECTO DE RESPUESTAS GENERATIVAS BASADAS EN RECUPERACIÓN (RAG)
 
-# Proyecto de Respuestas Generativas Basadas en Recuperación (RAG)
+## INTRODUCCIÓN
 
-En este proyecto utilicé técnicas de Recuperación y Generación (RAG) para responder preguntas de manera contextualizada. Las respuestas son generadas a partir de un conjunto de historias, extraidas a partir de un documento PDF y almacenadas en una base de datos vectorial utilizando embeddings y modelos de lenguaje avanzados. 🚀
+En este proyecto utilicé técnicas de Recuperación y Generación (RAG) para responder preguntas de manera contextualizada. Las respuestas son generadas a partir de un conjunto de historias, extraidas a partir de un documento PDF y almacenadas en una base de datos vectorial utilizando embeddings y modelos de lenguaje. 🚀
 
 El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para cada pregunta del usuario, siguiendo un tono definido.
 
-2. Tecnologías Utilizadas
 
 ## TÉCNOLOGIAS Y HERRAMIENTAS
 
@@ -47,50 +45,55 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
    - Utilizando el modelo generativo de Cohere, se produce una respuesta personalizada(según las características especificadas en system_prompt) basada en el documento relevante.
 
 ### **2. Archivos Principales**
-- **`RAG.ipynb`**: Contiene el código estructurado de manera accesible y entendible. 
-- **`historias.pdf`**: Documento del cual se ha extraido la información para pasarle como contexto al modeo.
-- **`embeddings.json`**: Directorio con los datos de historias en formato vectorial (Cada embedding con su chunk correspondiente)
+- **`RAG.ipynb`**: Contiene el código estructurado de manera accesible listo para ser ejecutado.
+- **`historias.pdf`**: Documento del cual se ha extraido la información para pasarle como contexto al modelo.
+- **`embeddings.json`**: Directorio que almacena los datos de historias en formato vectorial (Cada embedding con su chunk correspondiente)
 - **`README.md`**: Documentación del proyecto.
 - **`requirements.txt`**: Archivo con  librerias necesarias.
 
 ## INSTRUCCIONES DE EJECUCIÓN
 ### **1. Requisitos**
 - Python 3.8 o superior.
-- Librerías necesarias: `cohere`, `chromadb`, `jupyterlab`, 'langchain', 'pypdf'.
-
+- Librerías necesarias: `cohere`, `chromadb`, `jupyterlab`, `langchain`, `pypdf`.
 
 ### **3. Instalación**
 1. Clona este repositorio:
    ```
    git clone https://github.com/LuzTappero/Challenge-proyectoRAG
    cd proyecto-rag
-   
-2. Creación de entorno virtual(recomendado)**
-    Para crear el entorno: python -m venv venv,
-    Para activar el entorno: .\venv\Scripts\activate
-   
-2. Instala las dependencias necesarias en el entorno virtual
-   pip install -r requirements.txt
-   pip install chromadb langchain pypdf
 
-   crear un archivo .env para colocar tu API_KEY de Cohere.
+2. Creación de entorno virtual(recomendado):
+
+   - Para crear el entorno: python -m venv venv,
+   - Para activar el entorno: .\venv\Scripts\activate
+
+2. Instala las dependencias necesarias en el entorno virtual
+   - pip install -r requirements.txt
+   - pip install chromadb langchain pypdf
+
+   - Crear un archivo .env para colocar tu API_KEY de Cohere.
 
 ### **3.Ejecución**
     En la raiz del proyecto desde la terminal ejecutar el comando:
+       ```
         jupyter lab
-    Esto abrirá Jupyter Lab en tu navegador predeterminado accediendo a tu notebook para comenzar la ejecución.
+
+   Esto abrirá Jupyter Lab en tu navegador predeterminado accediendo a tu notebook para comenzar la ejecución.
 
 ## EJEMPLO DE USO
 
-#Uso - prueba 1 - Historia Sol y Luna
-#Definición del prompt
-prompt = "¿Quiénes son Sol y luna?"
+   #Uso - prueba 1 - Historia Sol y Luna
 
-#Llamada a la función RAG_answer
-response = RAG_answer(prompt, collection, system_prompt)
+   #Definición del prompt
 
-#Obtención de la respuesta
-print(response)
+   - prompt = "¿Quiénes son Sol y luna?"
+
+   #Llamada a la función RAG_answer
+
+   - response = RAG_answer(prompt, collection, system_prompt)
+
+   #Obtención de la respuesta
+   - print(response)
 
 ¡Sol y Luna son dos adorables gatitos 🐱! Sol es muy valiente y le encanta explorar, mientras que Luna es más tranquila y suave como una nube 🌙. ¡Son los mejores amigos y siempre se divierten juntos! 😻
 
