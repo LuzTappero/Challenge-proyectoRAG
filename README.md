@@ -38,9 +38,9 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
 
 ### **1. Flujo del Sistema**
 1. **Generación de embeddings**:
-   - Se utiliza el modelo `embed-multilingual-v3.0` para convertir el texto del prompt en un embedding vectorial.
+   - Se utiliza el modelo `embed-multilingual-v3.0` para convertir el texto del prompt y los chunks de la historia en un embedding vectorial.
 2. **Búsqueda en la base de datos**:
-   - El embedding generado se compara con los almacenados en ChromaDB para recuperar el documento más relevante.
+   - El embedding generado se compara con los almacenados en ChromaDB(embeddings de chunks) para recuperar el documento más relevante.
 3. **Generación de respuesta**:
    - Utilizando el modelo generativo de Cohere, se produce una respuesta personalizada(según las características especificadas en system_prompt) basada en el documento relevante.
 
@@ -49,7 +49,7 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
 - **`historias.pdf`**: Documento del cual se ha extraido la información para pasarle como contexto al modelo.
 - **`embeddings.json`**: Directorio que almacena los datos de historias en formato vectorial (Cada embedding con su chunk correspondiente)
 - **`README.md`**: Documentación del proyecto.
-- **`requirements.txt`**: Archivo con  librerias necesarias.
+- **`requirements.txt`**: Archivo con  librerias necesarias para instalar.
 
 ## INSTRUCCIONES DE EJECUCIÓN
 ### **1. Requisitos**
