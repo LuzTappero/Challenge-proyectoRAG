@@ -54,7 +54,6 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
 ## INSTRUCCIONES DE EJECUCIÓN
 ### **1. Requisitos**
 - Python 3.8 o superior.
-- Librerías necesarias: `cohere`, `chromadb`, `jupyterlab`, `langchain`, `pypdf`.
 
 ### **3. Instalación**
 1. Clona este repositorio:
@@ -69,7 +68,6 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
 
 2. Instala las dependencias necesarias en el entorno virtual
    - pip install -r requirements.txt
-   - pip install chromadb langchain pypdf
 
    - Crear un archivo .env para colocar tu API_KEY de Cohere.
 
