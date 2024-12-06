@@ -20,7 +20,7 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
 
 ### **3. Cohere**
 - **Uso**: Generación de embeddings y respuestas generativas.
-- **Motivo**: Utilicé el modelo **multilingual-v3.0** para generar embeddings multilingües de alta calidad, que pueden manejar entradas en varios idiomas. Esto es esencial para que el sistema pueda comprender preguntas en diferentes lenguajes. Además, he especificado que las respuestas deben ser siempre en español, aunque el modelo es capaz de manejar múltiples idiomas.
+- **Motivo**: Utilicé el modelo multilingual-v3.0 para generar embeddings multilingües de alta calidad, optimizados para manejar texto en varios idiomas. Esto permite comprender preguntas y buscar similitudes semánticas de forma precisa, incluso en diferentes lenguajes. Aunque el modelo soporta múltiples idiomas (importante para comprensión de preguntas en diferentes idiomas), las respuestas se especifican siempre en español para garantizar consistencia en la comunicación.
 
 ### **4. ChromaDB**
 - **Uso**: Base de datos vectorial para almacenar y recuperar embeddings.
