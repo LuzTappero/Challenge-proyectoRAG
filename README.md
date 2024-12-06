@@ -14,7 +14,7 @@ El objetivo es ofrecer respuestas consistentes, amigables y personalizadas para 
 - **Uso**: **PyPDF** es una librería en Python que permite trabajar con archivos PDF de manera sencilla. La utilicé para extraer el texto de los documentos en formato PDF, lo cual fue esencial para obtener la información necesaria para generar respuestas contextuales y basadas en documentos.
 - **Motivo**: La extracción del texto es eficiente, es simple de usar, es compatible también en casos de uso de textos en diversos idiomas.
 
-### **2. _RecursiveCharacterTextSplitter-Langchain**
+### **2. RecursiveCharacterTextSplitter-Langchain**
 - **Uso**: Librería **Langchain** junto con la clase **RecursiveCharacterTextSplitter** para dividir los documentos largos en "chunks" o fragmentos más pequeños. Esto es fundamental para manejar documentos extensos y procesarlos de manera eficiente, asegurando que el modelo pueda trabajar con ellos sin sobrecargar la memoria o el tiempo de procesamiento.
 - **Motivo**: La división del texto es eficiente, simple de utilizar y configurar. Langchain proporciona una forma sencilla y flexible de integrar este método de partición de texto en el flujo de trabajo de procesamiento de documentos, lo que mejora la eficiencia y la escalabilidad del sistema.
 
