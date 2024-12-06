@@ -1,4 +1,6 @@
 cohere
 jupyterlab
 python-dotenv
-ipywidgets
+langchain
+pypdf
+chromadb
